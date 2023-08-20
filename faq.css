@@ -1,0 +1,63 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+    
+}
+body{
+   display: flex;
+   align-items: center;
+   justify-content: center;          
+}
+.outer-layout{
+    width: 650px;
+    height: auto;
+    text-align: center;
+    }
+header{
+    width: 100%;
+    background:rgba(183, 180, 180, 0.71) ;
+    height: 70px;
+}
+header h1{
+    padding:20px  40px   20px    40px;
+}
+.faq{
+    border: 0.6px solid rgba(128, 128, 128, 0.299);
+}
+.question{
+    border-radius: 18px;
+    text-align: left;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+ 
+}
+.question h5{
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.question span{
+    position: relative;
+    top : 30px;
+    right: 25px;
+}
+.answer{
+
+    margin-top: -16px;
+    border-radius: 18px;
+    padding: 0px 20px;
+    /* max-height: 0; */
+    /* overflow: hidden; */
+    display: none;
+}
+
+.answer p {
+    padding: 1rem;
+    line-height: 1.6;
+}
+.faq.active .answer{
+    /* max-height: 300px; */
+    display: block;
+}
